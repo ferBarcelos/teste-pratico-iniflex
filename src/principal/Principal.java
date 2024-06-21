@@ -1,9 +1,9 @@
-package Principal;
+package principal;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
-import Classes.Funcionario;
+import classes.Funcionario;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
