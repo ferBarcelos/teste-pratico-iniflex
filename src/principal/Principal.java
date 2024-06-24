@@ -53,5 +53,12 @@ public class Principal {
 			lista.forEach(funcionario -> System.out.printf("  Nome: %s, Data de Nascimento: %s, Salário: R$ %,.2f%n",
 					funcionario.getNome(), funcionario.formatarData(), funcionario.getSalario()));
 		});
+		
+		// 3.10 Imprimir em ordem alfabética
+		
+		System.out.println("----------------------------------------------------------------------");
+		funcionarios.stream()
+        .sorted(Comparator.comparing(Funcionario::getNome))
+        .forEach(func -> System.out.printf("Nome: %s%n", func.getNome()));
 	}
 }
